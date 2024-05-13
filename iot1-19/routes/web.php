@@ -7,7 +7,7 @@ Route::get('/dashboard', function(){
     return view('dashboard');
 });
 Route::get('/devices', [DeviceController::class, 'showDevices']);
-//Route::get('/devices/{id}', [DataController::class, 'web_show']);
+Route::get('/devices/{id}', [DataController::class, 'web_show']);
 Route::get('/rules', function(){
     return view('rules');
 });
